@@ -5,8 +5,8 @@
 
 ## Respositorios destacados
 
-- **Dam Entregas** --> [DAM-entregas] (https://github.com/WilliamsPrometeo/DAM_entregas.git)
-- **Programación Entregas** --> [DAM-entregas] (https://github.com/WilliamsPrometeo/programacion-entregas.git)
+-**Dam Entregas** --> [DAM-entregas] (https://github.com/WilliamsPrometeo/DAM_entregas.git)
+-**Programación Entregas** --> [DAM-entregas] (https://github.com/WilliamsPrometeo/programacion-entregas.git)
 
 Here are some ideas to get you started:
 
