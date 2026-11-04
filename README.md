@@ -1,6 +1,37 @@
 <p align="center">
-  <img src="./assets/cabecera.svg" alt="Sergio Navarro · Desarrollo de Aplicaciones Multiplataforma · De los aviones al código" width="100%" />
+  <img src="./assets/cabecera.svg" alt="Sergio Navarro · Desarrollo de Aplicaciones Multiplataforma · Rumbo a la ciberseguridad" width="100%" />
 </p>
+
+<details>
+<summary><b>🇬🇧 English version</b> (click to expand)</summary>
+
+<br>
+
+#### 🧑‍💻 About me
+
+- 🎓 I'm studying **Multiplatform Application Development (DAM)** at **Prometeo by ThePower** (Madrid) · 2025 – 2027
+- 🔧 I come from **electronics** (Higher Vocational Degree in electronic systems), so I like to understand how things work on the inside
+- 🔐 My next step: a **Master's in Cybersecurity**
+- 🧩 I enjoy **organised, consistent, detail-oriented** work, and working as part of a team
+- 🌍 Spanish (native) · English (B2) · Japanese (basic, still learning 🇯🇵)
+
+#### 🛠️ Tech stack
+
+**Using:** Java · SQL · HTML & CSS · JavaScript · Spring Boot · Bootstrap · Django · Git & GitHub
+**Learning:** Python · Kotlin · C++ · C#
+
+#### 📂 Class repositories
+
+- [🎓 DAM_entregas](https://github.com/Colt246/DAM_entregas): coursework from my first year of DAM
+- [☕ programacion-entregas](https://github.com/Colt246/programacion-entregas): Programming exercises and practice (1st year)
+
+#### 🎮 When I'm not coding…
+
+Souls-likes (boss deaths: ∞ · times I gave up: 0) · Overwatch · anime & manga · comics and science books · drawing · padel 🎾
+
+📬 Contact: [sergionavarrofernandez1@gmail.com](mailto:sergionavarrofernandez1@gmail.com)
+
+</details>
 
 ---
 
@@ -49,10 +80,10 @@
   <img alt="Ciudad 3D de mis contribuciones" src="./profile-3d-contrib/profile-night-rainbow.svg" />
 </p>
 
-### 🐍 Mi actividad
+### 👾 Mi actividad
 
 <p align="center">
-  <img alt="Serpiente comiéndose mis contribuciones" src="https://raw.githubusercontent.com/Colt246/Colt246/output/github-snake.svg" />
+  <img alt="Pac-Man comiéndose mis contribuciones" src="https://raw.githubusercontent.com/Colt246/Colt246/output/pacman-contribution-graph-dark.svg" />
 </p>
 
 ### 🎮 Cuando no estoy programando…

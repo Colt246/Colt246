@@ -1,0 +1,53 @@
+name: Generar Pac-Man de contribuciones
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pacman.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: abozanona/pacman-contribution-graph@v5.3.2
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: "pacman"
+
+      # Panel oscuro propio para que se vea igual con GitHub en modo claro u oscuro
+      - name: Añadir fondo oscuro
+        run: |
+          python3 - <<'PY'
+          import re
+          p = "dist/pacman-contribution-graph-dark.svg"
+          s = open(p, encoding="utf-8").read()
+          m = re.search(r'viewBox="([^"]+)"', s)
+          if m:
+              x, y, w, h = map(float, m.group(1).replace(",", " ").split())
+          else:
+              w = float(re.search(r'<svg[^>]*\swidth="([\d.]+)', s).group(1))
+              h = float(re.search(r'<svg[^>]*\sheight="([\d.]+)', s).group(1))
+              x = y = 0.0
+          pad = 16
+          rect = (f'<rect x="{x-pad}" y="{y-pad}" width="{w+2*pad}" height="{h+2*pad}" '
+                  f'rx="18" fill="#0a1020" stroke="#1f3352" stroke-width="2"/>')
+          vb = f'viewBox="{x-pad} {y-pad} {w+2*pad} {h+2*pad}"'
+          s = re.sub(r'viewBox="[^"]+"', vb, s, count=1) if m else re.sub(r'<svg', f'<svg {vb}', s, count=1)
+          s = re.sub(r'(<svg[^>]*>)', lambda mm: mm.group(1) + rect, s, count=1)
+          open(p, "w", encoding="utf-8").write(s)
+          PY
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
