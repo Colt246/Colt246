@@ -46,24 +46,22 @@
 ### 🏙️ Mi ciudad de código
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-    <img alt="Ciudad 3D de mis contribuciones" src="./profile-3d-contrib/profile-green-animate.svg" />
-  </picture>
+  <img alt="Ciudad 3D de mis contribuciones" src="./profile-3d-contrib/profile-night-rainbow.svg" />
 </p>
 
 ### 🐍 Mi actividad
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Colt246/Colt246/output/github-snake-dark.svg" />
-    <img alt="Serpiente comiéndose mis contribuciones" src="https://raw.githubusercontent.com/Colt246/Colt246/output/github-snake.svg" />
-  </picture>
+  <img alt="Serpiente comiéndose mis contribuciones" src="https://raw.githubusercontent.com/Colt246/Colt246/output/github-snake.svg" />
 </p>
 
 ### 🎮 Cuando no estoy programando…
 
-Videojuegos · anime y manga · cómics y libros de ciencia · dibujar · pádel 🎾
+<p align="center">
+  <img src="./assets/gamer.svg" alt="Ficha de jugador: Souls-likes y Overwatch" width="100%" />
+</p>
+
+<p align="center">También: anime y manga · cómics y libros de ciencia · dibujar · pádel 🎾</p>
 
 ---
 

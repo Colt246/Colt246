@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Tarjeta de jugador: Souls-likes y Overwatch">
+  <defs>
+    <linearGradient id="gbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1020"/>
+      <stop offset="1" stop-color="#050812"/>
+    </linearGradient>
+    <radialGradient id="fireGlow" cx="0.5" cy="0.6" r="0.5">
+      <stop offset="0" stop-color="#ff9a3c" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="g2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan2" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.025"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: "Courier New", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .flame1 { animation: f1 0.9s ease-in-out infinite alternate; transform-origin: 140px 175px; }
+    .flame2 { animation: f2 0.7s ease-in-out infinite alternate; transform-origin: 140px 175px; }
+    .flame3 { animation: f1 0.55s ease-in-out infinite alternate-reverse; transform-origin: 140px 175px; }
+    @keyframes f1 { from { transform: scale(1, 1) skewX(0deg); } to { transform: scale(0.92, 1.12) skewX(4deg); } }
+    @keyframes f2 { from { transform: scale(1, 0.95) skewX(-3deg); } to { transform: scale(1.05, 1.1) skewX(3deg); } }
+    .glow { animation: pulse 1.6s ease-in-out infinite alternate; }
+    @keyframes pulse { from { opacity: 0.6; } to { opacity: 1; } }
+    .ember { animation: rise 3s linear infinite; opacity: 0; }
+    @keyframes rise { 0% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 100% { transform: translate(var(--dx), -110px); opacity: 0; } }
+    .stam { animation: stam 5s ease-in-out infinite; transform-origin: 0 0; }
+    @keyframes stam { 0%,15% { transform: scaleX(1); } 35% { transform: scaleX(0.18); } 55% { transform: scaleX(0.18); } 85%,100% { transform: scaleX(1); } }
+    .xp { animation: xp 2.5s ease-out 0.4s both; transform-origin: 0 0; }
+    @keyframes xp { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .toast { animation: toast 8s ease-in-out infinite; }
+    @keyframes toast { 0%, 8% { transform: translateY(40px); opacity: 0; } 15%, 60% { transform: translateY(0); opacity: 1; } 68%, 100% { transform: translateY(40px); opacity: 0; } }
+  </style>
+
+  <rect width="1000" height="260" rx="18" fill="url(#gbg)"/>
+  <rect x="6" y="6" width="988" height="248" rx="14" fill="none" stroke="#1f3352" stroke-width="2"/>
+
+  <!-- ============ HOGUERA (checkpoint) ============ -->
+  <circle class="glow" cx="140" cy="150" r="110" fill="url(#fireGlow)"/>
+  <!-- piedras -->
+  <g fill="#3a4357">
+    <ellipse cx="96" cy="190" rx="16" ry="9"/><ellipse cx="124" cy="196" rx="15" ry="8"/>
+    <ellipse cx="156" cy="196" rx="15" ry="8"/><ellipse cx="184" cy="190" rx="16" ry="9"/>
+  </g>
+  <!-- troncos -->
+  <g stroke-linecap="round" stroke-width="11">
+    <line x1="102" y1="186" x2="176" y2="164" stroke="#6b4423"/>
+    <line x1="178" y1="186" x2="104" y2="164" stroke="#7d522b"/>
+  </g>
+  <!-- llamas -->
+  <path class="flame1" d="M140 80 C 112 118, 104 140, 112 162 C 118 178, 162 178, 168 162 C 176 140, 166 118, 140 80 Z" fill="#ff5a1f" filter="url(#g2)"/>
+  <path class="flame2" d="M140 104 C 122 130, 118 146, 124 162 C 128 172, 152 172, 156 162 C 162 146, 156 130, 140 104 Z" fill="#ffa53a"/>
+  <path class="flame3" d="M140 128 C 130 144, 130 154, 133 163 C 136 169, 144 169, 147 163 C 150 154, 150 144, 140 128 Z" fill="#ffe08a"/>
+  <!-- chispas -->
+  <g fill="#ffcf6b">
+    <circle class="ember" cx="132" cy="130" r="2.2" style="--dx:-14px; animation-delay:0s"/>
+    <circle class="ember" cx="146" cy="126" r="1.8" style="--dx:12px; animation-delay:0.8s"/>
+    <circle class="ember" cx="138" cy="134" r="2"   style="--dx:-4px; animation-delay:1.6s"/>
+    <circle class="ember" cx="150" cy="132" r="1.6" style="--dx:18px; animation-delay:2.3s"/>
+  </g>
+  <text x="140" y="232" text-anchor="middle" class="mono" font-size="12" fill="#ffb547" opacity="0.9">CHECKPOINT · DESCANSANDO</text>
+
+  <!-- ============ FICHA DE JUGADOR ============ -->
+  <g class="mono">
+    <text x="290" y="52" font-size="13" fill="#ffb547" letter-spacing="3">◆ PLAYER 1 · FICHA DE PERSONAJE</text>
+    <text x="290" y="88" font-size="30" font-weight="bold" fill="#e8f3ff" filter="url(#g2)">COLT246</text>
+    <text x="290" y="112" font-size="14" fill="#5fd3ff">Clase: Desarrollador · Nivel 2 (DAM)</text>
+
+    <!-- barras -->
+    <text x="290" y="146" font-size="12" fill="#7d93b5">VIDA</text>
+    <rect x="370" y="136" width="240" height="12" rx="3" fill="#1a2238"/>
+    <rect x="370" y="136" width="240" height="12" rx="3" fill="#e5484d"/>
+
+    <text x="290" y="170" font-size="12" fill="#7d93b5">AGUANTE</text>
+    <rect x="370" y="160" width="240" height="12" rx="3" fill="#1a2238"/>
+    <g transform="translate(370 160)"><rect class="stam" width="240" height="12" rx="3" fill="#3dff9a"/></g>
+
+    <text x="290" y="194" font-size="12" fill="#7d93b5">EXP</text>
+    <rect x="370" y="184" width="240" height="12" rx="3" fill="#1a2238"/>
+    <g transform="translate(370 184)"><rect class="xp" width="150" height="12" rx="3" fill="#ffb547"/></g>
+    <text x="620" y="194" font-size="11" fill="#ffb547">62%</text>
+  </g>
+
+  <!-- ============ PARTIDAS GUARDADAS ============ -->
+  <g class="mono">
+    <rect x="670" y="34" width="300" height="160" rx="10" fill="#0b1626" stroke="#22395c"/>
+    <text x="690" y="60" font-size="12" fill="#7d93b5" letter-spacing="2">PARTIDAS GUARDADAS</text>
+
+    <text x="690" y="92" font-size="16" fill="#e8f3ff">⚔ Souls-likes</text>
+    <text x="712" y="112" font-size="12" fill="#ff8a8a">Muertes contra jefes: ∞</text>
+    <text x="712" y="128" font-size="12" fill="#3dff9a">Veces que me rendí: 0</text>
+
+    <text x="690" y="160" font-size="16" fill="#e8f3ff">🎯 Overwatch</text>
+    <text x="712" y="180" font-size="12" fill="#5fd3ff">Siempre listo para la partida</text>
+  </g>
+
+  <!-- ============ LOGRO DESBLOQUEADO ============ -->
+  <g class="toast mono">
+    <rect x="370" y="210" width="400" height="34" rx="8" fill="#141c30" stroke="#ffb547"/>
+    <text x="390" y="232" font-size="13" fill="#ffb547">🏆 LOGRO DESBLOQUEADO:</text>
+    <text x="572" y="232" font-size="13" fill="#e8f3ff">Constancia</text>
+  </g>
+
+  <rect width="1000" height="260" rx="18" fill="url(#scan2)" pointer-events="none"/>
+</svg>
