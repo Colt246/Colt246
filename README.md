@@ -46,11 +46,13 @@
 | [🎓 DAM_entregas](https://github.com/Colt246/DAM_entregas) | Entregas de clase de 1º de DAM |
 | [☕ programacion-entregas](https://github.com/Colt246/programacion-entregas) | Ejercicios y prácticas de Programación (1º DAM) |
 
-### 📊 Estadísticas
+### 🐍 Mi actividad
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Colt246&show_icons=true&theme=tokyonight&hide_border=true&locale=es" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Colt246&layout=compact&theme=tokyonight&hide_border=true&locale=es" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Colt246/Colt246/output/github-snake-dark.svg" />
+    <img alt="Serpiente comiéndose mis contribuciones" src="https://raw.githubusercontent.com/Colt246/Colt246/output/github-snake.svg" />
+  </picture>
 </p>
 
 ### 🎮 Cuando no estoy programando…
