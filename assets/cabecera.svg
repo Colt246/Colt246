@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-label="Sergio Navarro · Desarrollo de Aplicaciones Multiplataforma · Rumbo a la ciberseguridad">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1020"/>
+      <stop offset="1" stop-color="#050812"/>
+    </linearGradient>
+    <radialGradient id="radarBg" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0d2a1f"/>
+      <stop offset="1" stop-color="#06140f"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3dff9a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3dff9a" stop-opacity="0.55"/>
+    </linearGradient>
+    <clipPath id="radarClip"><circle cx="140" cy="140" r="95"/></clipPath>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.025"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: "Courier New", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .hud  { fill: #3dff9a; }
+    .cyan { fill: #5fd3ff; }
+    .amber{ fill: #ffb547; }
+    .blink { animation: blink 1.2s steps(2, start) infinite; }
+    @keyframes blink { to { visibility: hidden; } }
+    .blip { animation: blip 4s linear infinite; opacity: 0; }
+    @keyframes blip { 0%{opacity:0} 4%{opacity:1} 60%{opacity:0} 100%{opacity:0} }
+    .type { animation: type 3.5s steps(44, end) 0.6s both; }
+    @keyframes type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+    .fade { animation: fade 1.2s ease-out 0.2s both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: none;} }
+  </style>
+
+  <!-- fondo y marco del panel -->
+  <rect width="1000" height="280" rx="18" fill="url(#bg)"/>
+  <rect x="6" y="6" width="988" height="268" rx="14" fill="none" stroke="#1f3352" stroke-width="2"/>
+  <g fill="#2a4266">
+    <circle cx="22" cy="22" r="3"/><circle cx="978" cy="22" r="3"/>
+    <circle cx="22" cy="258" r="3"/><circle cx="978" cy="258" r="3"/>
+  </g>
+
+  <!-- ============ RADAR ============ -->
+  <circle cx="140" cy="140" r="104" fill="#0b1626" stroke="#22395c" stroke-width="3"/>
+  <circle cx="140" cy="140" r="95" fill="url(#radarBg)"/>
+  <g clip-path="url(#radarClip)">
+    <g stroke="#3dff9a" stroke-opacity="0.25" fill="none">
+      <circle cx="140" cy="140" r="30"/><circle cx="140" cy="140" r="60"/><circle cx="140" cy="140" r="90"/>
+      <line x1="45" y1="140" x2="235" y2="140"/><line x1="140" y1="45" x2="140" y2="235"/>
+    </g>
+    <g>
+      <path d="M140 140 L235 140 A95 95 0 0 0 207 73 Z" fill="url(#sweep)"/>
+      <line x1="140" y1="140" x2="235" y2="140" stroke="#3dff9a" stroke-width="2" filter="url(#glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 140 140" to="-360 140 140" dur="4s" repeatCount="indefinite"/>
+    </g>
+    <g class="hud" filter="url(#glow)">
+      <circle class="blip" cx="190" cy="105" r="4" style="animation-delay:0.35s"/>
+      <circle class="blip" cx="100" cy="85"  r="3.5" style="animation-delay:1.25s"/>
+      <circle class="blip" cx="85"  cy="175" r="4" style="animation-delay:2.4s"/>
+      <circle class="blip" cx="175" cy="200" r="3" style="animation-delay:3.3s"/>
+    </g>
+  </g>
+  <text x="140" y="262" text-anchor="middle" class="mono hud" font-size="12" opacity="0.8">NETWORK SCAN</text>
+
+  <!-- ============ TEXTO CENTRAL ============ -->
+  <g class="fade">
+    <text x="500" y="62" text-anchor="middle" class="mono amber" font-size="13" letter-spacing="3">◉ SYSTEMS ONLINE · SECURE SHELL v2.0</text>
+    <text x="500" y="118" text-anchor="middle" class="mono" font-size="44" font-weight="bold" fill="#e8f3ff" letter-spacing="2" filter="url(#glow)">SERGIO NAVARRO</text>
+    <text x="500" y="148" text-anchor="middle" class="mono cyan" font-size="16" letter-spacing="1">Desarrollo de Aplicaciones Multiplataforma</text>
+  </g>
+  <g class="type">
+    <text x="500" y="186" text-anchor="middle" class="mono hud" font-size="15">&gt; compilando ideas, protegiendo sistemas<tspan class="blink"> ▌</tspan></text>
+  </g>
+
+  <!-- lecturas tipo HUD -->
+  <g class="mono" font-size="12" text-anchor="middle">
+    <rect x="300" y="210" width="120" height="40" rx="6" fill="#0b1626" stroke="#22395c"/>
+    <text x="360" y="226" fill="#7d93b5">OBJETIVO</text>
+    <text x="360" y="242" class="hud">CIBERSEGURIDAD</text>
+    <rect x="440" y="210" width="120" height="40" rx="6" fill="#0b1626" stroke="#22395c"/>
+    <text x="500" y="226" fill="#7d93b5">NIVEL</text>
+    <text x="500" y="242" class="cyan">2º DAM ▲</text>
+    <rect x="580" y="210" width="120" height="40" rx="6" fill="#0b1626" stroke="#22395c"/>
+    <text x="640" y="226" fill="#7d93b5">ENERGÍA</text>
+    <text x="640" y="242" class="amber">☕ CAFÉ 87%</text>
+  </g>
+
+  <!-- ============ CANDADO / ESCUDO ============ -->
+  <circle cx="860" cy="140" r="104" fill="#0b1626" stroke="#22395c" stroke-width="3"/>
+  <circle cx="860" cy="140" r="95" fill="#08142a"/>
+  <g fill="none" stroke-linecap="round">
+    <g>
+      <circle cx="860" cy="140" r="86" stroke="#5fd3ff" stroke-width="3" stroke-dasharray="40 14" opacity="0.8"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 860 140" to="360 860 140" dur="14s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="860" cy="140" r="72" stroke="#3dff9a" stroke-width="2" stroke-dasharray="6 8" opacity="0.7"/>
+      <animateTransform attributeName="transform" type="rotate" from="360 860 140" to="0 860 140" dur="9s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="860" cy="140" r="58" stroke="#ffb547" stroke-width="3" stroke-dasharray="90 275" filter="url(#glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 860 140" to="360 860 140" dur="3s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <!-- candado -->
+  <g filter="url(#glow)">
+    <path d="M842 132 V118 a18 18 0 0 1 36 0 V132" fill="none" stroke="#3dff9a" stroke-width="6"/>
+    <rect x="833" y="130" width="54" height="42" rx="7" fill="#3dff9a">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="860" cy="147" r="6" fill="#06140f"/>
+    <rect x="857" y="149" width="6" height="12" rx="2" fill="#06140f"/>
+  </g>
+  <text x="860" y="262" text-anchor="middle" class="mono hud" font-size="12" opacity="0.8">ACCESS GRANTED</text>
+
+  <!-- líneas de escaneo -->
+  <rect width="1000" height="280" rx="18" fill="url(#scan)" pointer-events="none"/>
+</svg>

@@ -1,8 +1,5 @@
-<h1 align="center">¡Hola! Soy Sergio 👋</h1>
-<h3 align="center">Estudiante de Desarrollo de Aplicaciones Multiplataforma · De los aviones al código ✈️➜💻</h3>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=520&lines=Programador+en+formaci%C3%B3n+(DAM);Java+%7C+SQL+%7C+HTML+%26+CSS+%7C+JavaScript;Pr%C3%B3ximo+objetivo%3A+Ciberseguridad+%F0%9F%94%90" alt="Typing SVG" />
+  <img src="./assets/cabecera.svg" alt="Sergio Navarro · Desarrollo de Aplicaciones Multiplataforma · De los aviones al código" width="100%" />
 </p>
 
 ---
@@ -10,7 +7,7 @@
 ### 🧑‍💻 Sobre mí
 
 - 🎓 Estudio **DAM** en **Prometeo by ThePower** (Madrid) · 2025 – 2027
-- ✈️ Vengo del mundo de la **aviónica**: Técnico Superior en Mantenimiento de Sistemas Electrónicos y Aviónicos en Aeronaves
+- 🔧 Vengo de la **electrónica** (FP Superior en sistemas electrónicos), así que me gusta entender cómo funcionan las cosas por dentro
 - 🔐 Mi siguiente paso: un **máster en Ciberseguridad**
 - 🧩 Me gusta el trabajo **ordenado, constante y con atención al detalle**, y trabajar en equipo
 - 🌍 Español (nativo) · Inglés (B2) · Japonés (básico, aprendiendo 🇯🇵)
@@ -45,6 +42,15 @@
 |---|---|
 | [🎓 DAM_entregas](https://github.com/Colt246/DAM_entregas) | Entregas de clase de 1º de DAM |
 | [☕ programacion-entregas](https://github.com/Colt246/programacion-entregas) | Ejercicios y prácticas de Programación (1º DAM) |
+
+### 🏙️ Mi ciudad de código
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+    <img alt="Ciudad 3D de mis contribuciones" src="./profile-3d-contrib/profile-green-animate.svg" />
+  </picture>
+</p>
 
 ### 🐍 Mi actividad
 
