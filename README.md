@@ -20,12 +20,9 @@
 **Using:** Java · SQL · HTML & CSS · JavaScript · Spring Boot · Bootstrap · Django · Git & GitHub
 **Learning:** Python · Kotlin · C++ · C#
 
-#### ⭐ Featured project
+#### 📂 Repositories
 
-- [🦸 Overwatch Heroes Gallery](https://github.com/Colt246/galeria-ovewatch): my first-year final project. 51 heroes with their abilities, search and role filters, full CRUD over a REST API, light/dark mode and mobile-friendly design. **Spring Boot · PostgreSQL · Bootstrap · JavaScript**
-
-#### 📂 Class repositories
-
+- [🦸 galeria-ovewatch](https://github.com/Colt246/galeria-ovewatch): Overwatch heroes gallery, my first-year final project (Spring Boot, PostgreSQL, Bootstrap)
 - [🎓 DAM_entregas](https://github.com/Colt246/DAM_entregas): coursework from my first year of DAM
 - [☕ programacion-entregas](https://github.com/Colt246/programacion-entregas): Programming exercises and practice (1st year)
 
@@ -71,36 +68,11 @@ Souls-likes (boss deaths: ∞ · times I gave up: 0) · Overwatch · anime & man
   <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
 </p>
 
-### ⭐ Proyecto destacado
-
-<table>
-<tr>
-<td width="55%">
-  <a href="https://github.com/Colt246/galeria-ovewatch">
-    <img src="https://raw.githubusercontent.com/Colt246/galeria-ovewatch/main/docs/capturas/galeria.png" alt="Galería de Héroes de Overwatch" />
-  </a>
-</td>
-<td>
-
-#### 🦸 [Galería de Héroes de Overwatch](https://github.com/Colt246/galeria-ovewatch)
-
-Mi proyecto final de 1º de DAM (Lenguaje de Marcas + Programación).
-
-- 🗂️ 51 héroes con sus habilidades
-- 🔍 Buscador y filtros por rol
-- ✏️ CRUD completo contra una API REST
-- 🌗 Modo claro y oscuro · 📱 adaptable a móvil
-
-**Spring Boot · PostgreSQL · Bootstrap · JavaScript**
-
-</td>
-</tr>
-</table>
-
-### 📂 Mis repositorios de clase
+### 📂 Mis repositorios
 
 | Proyecto | Descripción |
 |---|---|
+| [🦸 galeria-ovewatch](https://github.com/Colt246/galeria-ovewatch) | Galería de héroes de Overwatch: proyecto final de 1º DAM con Spring Boot, PostgreSQL y Bootstrap |
 | [🎓 DAM_entregas](https://github.com/Colt246/DAM_entregas) | Entregas de clase de 1º de DAM |
 | [☕ programacion-entregas](https://github.com/Colt246/programacion-entregas) | Ejercicios y prácticas de Programación (1º DAM) |
 
